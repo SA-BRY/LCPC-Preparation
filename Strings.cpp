@@ -30,7 +30,7 @@ int main()
 
     cout << s << "\n"; // my world
 
-    reverse(s.begin(), s.end()); // to reverse a string
+  //  reverse(s.begin(), s.end()); // to reverse a string
     cout << s;
 
     for (int i = s.length() - 1; i >= 0; i--) // to reverse a string manually

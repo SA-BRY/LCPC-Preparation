@@ -18,7 +18,6 @@ int main() {
         // 👉 Check if the character is an alphabet letter
         // If yes, append it to 'result'
     }
-
     // 👉 Print the result
     return 0;
 }
