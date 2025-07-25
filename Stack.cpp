@@ -4,19 +4,40 @@ using namespace std;
 
 int main (){
 stack<int> st;
+
+// pushing values to a stack from top which it is the only thing we can access
 st.push(1);
 st.push(2);
 st.push(3);
 st.push(4);
 st.push(5);
 st.push(6);
-
-cout<<st.top()<<"\n"; 
-st.pop();
-cout<<st.top()<<"\n";
-cout<<st.empty()<<"\n";
-cout<<st.size()<<"\n";
+/*
 
 
-    return 0 ;
+
+| 6 | top
+| 5 |
+| 4 |
+| 3 |
+| 2 |
+| 1 |
+|___|
+
+
+*/
+
+cout<<st.top()<<"\n"; // in this case it returns 6 
+
+st.pop(); // this function is delete from the top of the stack
+
+cout<<st.top()<<"\n";// now it will return 5
+
+cout<<st.empty()<<"\n"; // returns true or 1 if the stack is empty otherwise 0 or false
+
+
+cout<<st.size()<<"\n"; //returns the lingth or number of elements of stack
+
+
+    return 0 ; //returns the size of the stack in this case it is 5
 }
