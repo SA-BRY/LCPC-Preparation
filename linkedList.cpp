@@ -1,16 +1,16 @@
 #include<iostream>
 using namespace std;
-struct node{
-    int val;
-    int next;
-};
+
 int main(){
-
-
-node first = new node{};
-
-
-
-
+    struct linkedList
+    {
+        int val;
+        linkedList* next;
+    };
+    
+    
+    
+    
+    
     return 0;
 }
