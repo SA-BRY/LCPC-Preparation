@@ -31,3 +31,43 @@
 // 🚀 Goal:
 // Implement the function `bool isBalanced(string s);`
 // and test it using standard input in `main()`.
+
+#include <iostream>
+#include <stack>
+using namespace std;
+
+bool isBalanced(string s){
+    stack<char> st;
+    for (char c : s){
+
+        if (c == '(' || c == '[' || c == '{'){
+            st.push(c);
+        }
+        if (c == ')' || c == ']' || c == '}'){
+            if (st.empty())
+                return false;
+            char top = st.top();
+            st.pop();
+
+            if (c == ')' && top != '(' ||
+                c == '}' && top != '{' ||
+                c == ']' && top != '['){
+                return false;
+            }
+        }
+    }
+    
+
+    return st.empty();
+}
+
+int main(){
+cout<<"enter";
+    string input;
+    cin>>input;
+
+    if(isBalanced(input))cout<<"balanced";
+    else cout<<"notBalanced";
+
+    return 0;
+}

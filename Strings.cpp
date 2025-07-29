@@ -74,6 +74,11 @@ cout<<Up<<"\n";
 cout<<Low<<"\n";
 
 
+for(char c:s){
+    cout<<c<<"\n";
+}
+
+
 
     return 0;
 }

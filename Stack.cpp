@@ -3,6 +3,8 @@
 using namespace std;
 
 int main (){
+
+
 stack<int> st;
 
 // pushing values to a stack from top which it is the only thing we can access
@@ -38,6 +40,16 @@ cout<<st.empty()<<"\n"; // returns true or 1 if the stack is empty otherwise 0 o
 
 cout<<st.size()<<"\n"; //returns the lingth or number of elements of stack
 
+
+//printing a stack 
+cout<<"printing a stack\n";
+while(st.size()>0){
+
+    cout <<"|"<<st.top()<<"|"<<"\n";
+    st.pop();
+    
+    }
+    cout<<"---";
 
     return 0 ; //returns the size of the stack in this case it is 5
 }

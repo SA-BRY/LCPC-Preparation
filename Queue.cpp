@@ -23,10 +23,10 @@ int main(){
     */
 
     cout << q.front() << "\n"; // returns  the element of in the front of queue
-    q.pop(); //delete or drop the in the front of the stack
+    q.pop(); //delete or drop the in the front of the queue
     cout<<q.back()<<"\n";//returns the element of in the back of queue
     cout<<q.empty()<<"\n";//returns true or 1 if the queue is empty otherwise 0 or false
-    cout<<q.size()<<"\n";//returns the lingth or number of elements of stack
+    cout<<q.size()<<"\n";//returns the lingth or number of elements in a queue
 
 
 
@@ -43,7 +43,7 @@ int main(){
     
         f           e
         ______________
-    <=   5 10 15       <=
+    <=>   5 10 15       <=>
         --------------
 
         
@@ -53,6 +53,8 @@ int main(){
                         // [5,10, 15]
     dq.pop_front();     // [10, 15]
     dq.pop_back();      // [10]
+
+
 
     cout << dq.front() << "\n";// 10
 
