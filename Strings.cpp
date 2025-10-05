@@ -18,7 +18,7 @@ int main()
 
     cout << s.substr(6, 6) << "\n"; // s.substr(pos, len)
 
-    cout << s.find("e") << "\n"; // returns the index
+    cout << s.find("e") << "\n"; // returns the index 1
 
     cout << s.rfind("o") << "\n"; // returns the index
 

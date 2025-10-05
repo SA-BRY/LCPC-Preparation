@@ -5,15 +5,10 @@ int main(){
     int n;
     cin>>n;
     string word;
-    for (int i = 0; i < n; i++){
-
+    while(n--){
         cin>>word;
         if (word.size()<10)cout<<word;
-        else cout<<word[0]<<word.size()-2<<word[word.size()-1];
+        else cout<<word[0]+to_string(word.size()-2)+word[word.size()-1]<<endl;
     }
-    
-
-
-
     return 0;
 }

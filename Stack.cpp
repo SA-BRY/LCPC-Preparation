@@ -31,7 +31,7 @@ st.push(6);
 
 cout<<st.top()<<"\n"; // in this case it returns 6 
 
-st.pop(); // this function is delete from the top of the stack
+int stop = st.pop() ; // this function is delete from the top of the stack
 
 cout<<st.top()<<"\n";// now it will return 5
 
